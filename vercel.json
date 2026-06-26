@@ -6,13 +6,13 @@
 
   "builds": [
 
-    { "src": "app.js", "use": "@vercel/node" }
+    { "src": "dist/index.js", "use": "@vercel/node" }
 
   ],
 
   "routes": [
 
-    { "src": "/(.*)", "dest": "/app.js" }
+    { "src": "/(.*)", "dest": "dist/index.js" }
 
   ]
 
